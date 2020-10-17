@@ -52,3 +52,76 @@ Agora substitua o arquivo original ~/.zshrc, lembrando que o tema que uso para o
 $ rm ~/.zshrc && cp ~/Projects/my-dotfiles/.zshrc ~/
 ```
 
+## Visual Studio Code
+
+Também utilizo para algumas tarefas o Visual Studio Code, que é a minha IDE preferida que só perde espaço para o NeoVim. Minha lista de extensões:
+
+* Bracket Pair Colorizer
+* Code Runner
+* Color Highlight
+* Dark Molokai Theme
+* Live server
+* Material Icon Theme
+* Prettier - Code formatter
+* Settings Sync
+* TabNine
+
+Eu também realizo outras configurações que devem ser alteradas no arquivo .JSON do Visual Studio Code. Pressione Ctrl+Shift+P para entrar no Command Palette e digite Open settings (JSON). Agora copie para o arquivo:
+
+```
+{
+    // My settings
+    "workbench.iconTheme": "material-icon-theme",
+    "workbench.startupEditor": "none",
+    "workbench.editor.labelFormat": "short",
+    "terminal.integrated.shell.osx": "/bin/zsh",
+    "terminal.integrated.fontSize": 14,
+    "editor.tabSize": 2,
+    "editor.fontSize": 14,
+    "editor.lineHeight": 20,
+    "editor.fontFamily": "Fira Code",
+    "editor.fontLigatures": true,
+    "editor.rulers": [80, 120],
+    "editor.renderLineHighlight": "gutter",
+    "window.zoomLevel": 0,
+    "explorer.compactFolders": false,
+    "extensions.ignoreRecommendations": true,
+    "tabnine.experimentalAutoImports": true,
+
+    "material-icon-theme.folders.associations": {
+        "infra": "app",
+        "entities": "class",
+        "schemas": "class",
+        "typeorm": "database",
+        "repositories": "mappings",
+        "http": "container",
+        "migrations": "tools",
+        "modules": "components",
+        "implementations": "core",
+        "dtos": "typescript",
+        "fakes": "mock",
+        "websockets": "pipe",
+        "protos": "pipe",
+        "grpc": "pipe"
+    },
+
+    "material-icon-theme.files.associations": {
+        "ormconfig.json": "database",
+        "tsconfig.json": "tune",
+        "*.proto": "3d"
+    },
+
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "node_modules": true
+    },
+    "workbench.colorTheme": "Dark (Molokai)",
+    "workbench.activityBar.visible": true,
+}
+```
+
+Após realizar todas as configurações desejadas sincronize tudo com a extensão Settings Sync com sua conta do GitHub.
