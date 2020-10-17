@@ -66,7 +66,7 @@ Também utilizo para algumas tarefas o Visual Studio Code, que é a minha IDE pr
 * Settings Sync
 * TabNine
 
-Eu também realizo outras configurações que devem ser alteradas no arquivo .JSON do Visual Studio Code. Pressione Ctrl+Shift+P para entrar no Command Palette e digite Open settings (JSON). Agora copie para o arquivo:
+Eu também realizo outras configurações que devem ser alteradas no arquivo .JSON do Visual Studio Code. Pressione <kbd>Ctrl+Shift+P</kbd> para entrar no Command Palette e digite Open settings (JSON). Agora copie para o arquivo:
 
 
 <details>
@@ -127,9 +127,9 @@ Eu também realizo outras configurações que devem ser alteradas no arquivo .JS
 "workbench.colorTheme": "Dark (Molokai)",
 "workbench.activityBar.visible": true,
 
-}
-    
+} 
 ```
+
 </details>
 
 Após realizar todas as configurações desejadas sincronize tudo com a extensão Settings Sync com sua conta do GitHub.
