@@ -2,7 +2,11 @@
 
 Meus dotfiles para programação web com tilix, tmux, neovim, zshell e vscode.
 
-**Imagens**
+<div align="center">
+<img src="https://octodex.github.com/images/megacat-2.png" width="200"><br>
+<sup><strong>Fig 1:</strong> Megatocat into action</sup>
+</div>
+View more octocats on the [Octodex](https://octodex.github.com/)!
 
 Clone este repositório para o diretório ~/Projects/
 
@@ -73,7 +77,7 @@ Eu também realizo outras configurações que devem ser alteradas no arquivo .JS
 <summary>Open settings (JSON)</summary>
 <pre>
 
-```
+```json
 {
     "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "none",
