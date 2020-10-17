@@ -68,9 +68,13 @@ Também utilizo para algumas tarefas o Visual Studio Code, que é a minha IDE pr
 
 Eu também realizo outras configurações que devem ser alteradas no arquivo .JSON do Visual Studio Code. Pressione Ctrl+Shift+P para entrar no Command Palette e digite Open settings (JSON). Agora copie para o arquivo:
 
+
+<details>
+<summary>Open settings (JSON)</summary>
+<pre>
+
 ```
 {
-    // My settings
     "workbench.iconTheme": "material-icon-theme",
     "workbench.startupEditor": "none",
     "workbench.editor.labelFormat": "short",
@@ -119,9 +123,13 @@ Eu também realizo outras configurações que devem ser alteradas no arquivo .JS
         "**/.DS_Store": true,
         "node_modules": true
     },
-    "workbench.colorTheme": "Dark (Molokai)",
-    "workbench.activityBar.visible": true,
+
+"workbench.colorTheme": "Dark (Molokai)",
+"workbench.activityBar.visible": true,
+
 }
+    
 ```
+</details>
 
 Após realizar todas as configurações desejadas sincronize tudo com a extensão Settings Sync com sua conta do GitHub.
