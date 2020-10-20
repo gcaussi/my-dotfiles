@@ -3,28 +3,30 @@
 Meus dotfiles para programação web com tilix, tmux, neovim, zshell e vscode.
 
 <div align="center">
-<img src="https://octodex.github.com/images/megacat-2.png" width="200"><br>
-<sup><strong>Fig 1:</strong> Megatocat into action</sup>
+    <img src="https://octodex.github.com/images/megacat-2.png" width="200"><br>
+    <sup><strong>Fig 1:</strong> Megatocat into action</sup>
 </div>
+
+<br>
 
 Clone este repositório para o diretório ~/Projects/
 
-```
-$ mkdir ~/Projects && cd ~/Projects/
+```bash
+mkdir ~/Projects && cd ~/Projects/
 
-$ git clone https://github.com/gcaussi/my-dotfiles.git
+git clone https://github.com/gcaussi/my-dotfiles.git
 
-$ cd ~/Projects/my-dotfiles
+cd ~/Projects/my-dotfiles
 ```
 
 ## Tilix
 
 Copie o tilixkai.json para o diretório ~/.config/tilix/schemes
 
-```
-$ mkdir ~/.config/tilix/schemes
+```bash
+mkdir ~/.config/tilix/schemes
 
-$ cp ~/Projects/my-dotfiles/tilixkai.json ~/.config/tilix/schemes
+cp ~/Projects/my-dotfiles/tilixkai.json ~/.config/tilix/schemes
 ```
 
 Agora nas configurações do Tilix mude a fonte padrão para Fira Code Regular 10 e o tema para Tilixkai.
@@ -33,27 +35,44 @@ Agora nas configurações do Tilix mude a fonte padrão para Fira Code Regular 1
 
 Primeiramente devemos instalar o ZSH:
 
-```
-$ sudo apt install zsh
+```bash
+sudo apt install zsh
 ```
 
 Agora instalaremos o Oh My Zsh:
 
-```
-$ sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+```bash
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
 ```
 
 Reinicie o terminal e abra o ZSH:
 
-```
-$ zsh
+```bash
+zsh
 ```
 
 Agora substitua o arquivo original ~/.zshrc, lembrando que o tema que uso para o Oh My Zsh é o kafeitu:
 
+```zsh
+rm ~/.zshrc && cp ~/Projects/my-dotfiles/.zshrc ~/
 ```
-$ rm ~/.zshrc && cp ~/Projects/my-dotfiles/.zshrc ~/
+
+## NeoVim
+
+Primeiramente instale o vim-plug, que será responsável por instalar todos os outros plugins:
+
+```zsh
+curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 ```
+
+Agora copie o arquivo init.vim para o seguinte diretório:
+
+```zsh
+cp ~/Projects/my-dotfiles/neovim/init.vim ~/.config/nvim/
+```
+
+Agora execute o NeoVim digitando no terminal nvim e quando ele abrir pressione <kbd>Ctrl+D</kbd>. Isto fará com que todos os plugins sejam instalados automaticamente.
 
 ## Visual Studio Code
 
