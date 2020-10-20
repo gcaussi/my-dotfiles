@@ -2,6 +2,8 @@
 
 Meus dotfiles para programação web com tilix, tmux, neovim, zshell e vscode.
 
+Escrever também sobre o instalador automático e escrever na issue
+
 <div align="center">
     <img src="https://octodex.github.com/images/megacat-2.png" width="200"><br>
     <sup><strong>Fig 1:</strong> Megatocat into action</sup>
